@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="LatencyWorker" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="LatencyWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=arto3579;AccountKey=$(_arto3579.key_)" />
+      <Setting name="IsWriteRegion" value="true" />
+      <Setting name="CurrentRegion" value="Central US" />
+      <Setting name="DocumentDbPreferredLocations" value="Central US" />
+      <Setting name="TableNativeConnectionString" value="DefaultEndpointsProtocol=https;AccountName=sivethetabletest;AccountKey=rNe43poCzETPz2r0xf7ttcLzXuVvJ0W5RofbBxbdlJuJ/T07JxBL5gaVpQ3w2XPFR19InEABc4QbNO18AWVXhw==;EndpointSuffix=core.windows.net" />
+      <Setting name="TablePremiumConnectionString" value="DefaultEndpointsProtocol=https;AccountName=geodemo;AccountKey=ym2wJTg2ObXoHddgQUarIvZdNCrvRGMxQV1NJ7FvPVwvSsfdEwhUktYe8QvlSt2viSabhGsfRqStZoWUqwUm8Q==;TableEndpoint=https://geodemo.documents.azure.com" />
+      <Setting name="LatencyResultStoreConnectionString" value="mongodb://mongodemovishi:N3rSZw2zbXKmvy4Dc8BH4fphy9YCoxesncWBbPLNKB0IGLz7cs57DISQ1U9Fx1D27H70JTd13hboxDUXD03tmw==@mongodemovishi.documents.azure.com:10250/?ssl=true" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d92afd04-e81f-4087-a418-06948b8aa816" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
